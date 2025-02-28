@@ -1,13 +1,19 @@
-Package: HybridAMMIdoc
-Title: What the Package Does (One Line, Title Case)
-Version: 0.0.0.9000
+Package: MyHybridAMMI
+Type: Package
+Title: A Hybrid Robust-Weighted AMMI Modeling Package
+Version: 0.1.0
 Authors@R: 
-    person("First", "Last", , "first.last@example.com", role = c("aut", "cre"))
-Description: What the package does (one paragraph).
-License: `use_mit_license()`, `use_gpl3_license()` or friends to pick a
-    license
+    person("Your", "Name", email = "your.email@example.com", role = c("aut", "cre"))
+Description: This package implements a hybrid robust-weighted AMMI model for genotype-environment data.
+License: MIT + file LICENSE
 Encoding: UTF-8
-Roxygen: list(markdown = TRUE)
+LazyData: true
+Imports:
+    dplyr,
+    pbapply,
+    lme4,
+    robustlmm,
+    MASS,
+    reshape2,
+    rsvddpd
 RoxygenNote: 7.2.3
-URL: https://github.com/marcelofonsecab/HybridAMMIdoc
-BugReports: https://github.com/marcelofonsecab/HybridAMMIdoc/issues

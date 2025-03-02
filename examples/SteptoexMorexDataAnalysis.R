@@ -3,7 +3,7 @@
 # All comments and variable names are in English to ensure global usability.
 
 # Load the MyHybridAMMI package
-library(MyHybridAMMI)
+library(hybrid_rw-ammi)
 
 # Load your dataset.
 # In this example, we are using the SteptoexMorex dataset.

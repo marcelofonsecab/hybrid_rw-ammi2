@@ -37,7 +37,7 @@ You can install **hybrid_rw-ammi** from GitHub
 
 ```r
 # install.packages("devtools")
-devtools::install_github("marcelofonsecab/hybrid_rw-ammi")
+devtools::install_github("marcelofonsecab/hybrid_rw-ammi2")
 ```
 
 Ensure you have the following required packages installed:

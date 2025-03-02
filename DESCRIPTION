@@ -1,4 +1,4 @@
-Package: hybrid_rw-ammi2
+Package: hybrid_rw_ammi
 Type: Package
 Title: A hybrid robust-weighted AMMI modeling approach with generalized weighting schemes
 Version: 0.1.0

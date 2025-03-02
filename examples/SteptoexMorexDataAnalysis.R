@@ -112,7 +112,7 @@ BiplotCreation(allSVDs$AMMI$SVD,
                lims.U = c(-2.6, 3.7),
                lims.V = c(-2.94, 3.2))
 
-## 6b: Biplots for selected W-AMMI models (models 1, 5, 6)
+## 6b: Biplots for selected W-AMMI models ({1}, {5}, {6})
 BiplotCreation(allSVDs$WAMMI$WAMMI_lmm.Weights.Env$SVD,
                env.names = envNames,
                lims = TRUE,
@@ -129,7 +129,7 @@ BiplotCreation(allSVDs$WAMMI$WAMMI_lmm.Weights.RlmdotEnv$SVD,
                lims.U = c(-2.6, 3.7),
                lims.V = c(-2.94, 3.2))
 
-## 6c: Biplots for selected R-AMMI models (models 1, 5, 6)
+## 6c: Biplots for selected R-AMMI models ({1}, {5}, {6})
 BiplotCreation(allSVDs$RAMMI$RAMMI_rlmm.Weights.Env$SVD,
                env.names = envNames,
                lims = TRUE,
@@ -146,7 +146,7 @@ BiplotCreation(allSVDs$RAMMI$RAMMI_rlmm.Weights.RlmdotEnv$SVD,
                lims.U = c(-2.6, 3.7),
                lims.V = c(-2.94, 3.2))
 
-## 6d: Biplots for selected RW-AMMI models (models 1, 5, 6)
+## 6d: Biplots for selected RW-AMMI models ({1}, {5}, {6})
 BiplotCreation(allSVDs$RWAMMI$RWAMMI_rlmm.Weights.Env$SVD,
                env.names = envNames,
                lims = TRUE,
@@ -165,7 +165,7 @@ BiplotCreation(allSVDs$RWAMMI$RWAMMI_rlmm.Weights.RlmdotEnv$SVD,
 
 # Step 7: (Supplementary) Create additional biplots for further model comparisons
 
-## Biplots for additional W-AMMI models (models 2, 3, 4, 7, 8, 9)
+## Biplots for additional W-AMMI models ({2}, {3}, {4}, {7}, {8}, {9})
 BiplotCreation(allSVDs$WAMMI$WAMMI_lmm.Weights.Gen$SVD,
                env.names = envNames,
                lims = TRUE,
@@ -197,7 +197,7 @@ BiplotCreation(allSVDs$WAMMI$WAMMI_lmm.Weights.GenplusEnv$SVD,
                lims.U = c(-2.6, 3.7),
                lims.V = c(-2.94, 3.2))
 
-## Biplots for additional R-AMMI models (models 2, 3, 4, 7, 8, 9)
+## Biplots for additional R-AMMI models ({2}, {3}, {4}, {7}, {8}, {9})
 BiplotCreation(allSVDs$RAMMI$RAMMI_rlmm.Weights.Gen$SVD,
                env.names = envNames,
                lims = TRUE,
@@ -229,7 +229,7 @@ BiplotCreation(allSVDs$RAMMI$RAMMI_rlmm.Weights.GenplusEnv$SVD,
                lims.U = c(-2.6, 3.7),
                lims.V = c(-2.94, 3.2))
 
-## Biplots for additional RW-AMMI models (models 2, 3, 4, 7, 8, 9)
+## Biplots for additional RW-AMMI models ({2}, {3}, {4}, {7}, {8}, {9})
 BiplotCreation(allSVDs$RWAMMI$RWAMMI_rlmm.Weights.Gen$SVD,
                env.names = envNames,
                lims = TRUE,

@@ -22,12 +22,13 @@
 #' sim_data <- sim_amb(seed = 123)
 #' rep_data <- Create_Replications(sim_data, reps = 2, sig = 1)
 #' contaminated <- Data_Contamination(rep_data, percentage = 5, seed = 1, type = "shift")
-#' # Assume weights is a predefined list of weight vectors
+#' Ngen = length(unique(sim_data$gen))
+#' Nenv = length(unique(sim_data$env))
+#' Weight_Matrix = matrix(runif(Ngen*Nenv), nrow = Ngen, ncol = Nenv)
 #' models <- All_SVDS(data_not_contaminated = rep_data,
 #'                    data_contaminated = contaminated$data.contaminated,
-#'                    weights = list(LMM = list(w1 = rep(1, nrow(rep_data))),
-#'                                   RLMM = list(w1 = rep(1, nrow(rep_data)))),
-#'                    Ncomp = 2, rSVD = FALSE)
+#'                    weights = list(LMM = list(w1 = Weight_Matrix),RLMM = list(w1 = Weight_Matrix)),
+#'                    Ncomp = 2, rSVD = F)
 #' names(models)
 #'
 #' @export

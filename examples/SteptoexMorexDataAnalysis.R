@@ -1,8 +1,8 @@
-# Example Application of the MyHybridAMMI Package
+# Example Application of the hybrid_rw-ammi Package
 # This script demonstrates a step-by-step analysis using real genotype-environment data.
 # All comments and variable names are in English to ensure global usability.
 
-# Load the MyHybridAMMI package
+# Load the hybrid_rw-ammi package
 library(hybrid_rw-ammi)
 
 # Load your dataset.

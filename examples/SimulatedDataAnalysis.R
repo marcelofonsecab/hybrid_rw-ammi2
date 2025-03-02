@@ -1,5 +1,5 @@
 # ============================================================
-# Example Analysis of Simulated Data Using the hybrid_rw_ammi Package
+# Example Analysis of Simulated Data Using the hybridRWAMMI Package
 #
 # In this example, we load a simulated dataset with 2% contamination and a shift type
 # contamination (shift k = 4). The package provides several simulated datasets:
@@ -23,8 +23,8 @@
 #
 # ============================================================
 
-# Load required packages and the hybrid_rw_ammi package
-library(hybrid_rw_ammi)
+# Load required packages and the hybridRWAMMI package
+library(hybridRWAMMI)
 # (Make sure that the required packages are installed as noted in the package documentation)
 
 # Load the simulated data; here we use the dataset with 2% contamination and shift (k = 4)

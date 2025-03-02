@@ -41,7 +41,7 @@ Different types of contamination can be applied: shifting values, creating point
 or inflating variances.
 }
 \examples{
-sim_data <- sim.amb(seed = 123)
+sim_data <- sim_amb(seed = 123)
 contaminated <- Data_Contamination(sim_data, percentage = 5, seed = 1, type = "shift")
 str(contaminated)
 

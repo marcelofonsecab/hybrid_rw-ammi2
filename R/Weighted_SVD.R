@@ -17,6 +17,7 @@
 #' svd_res <- WeightedSvdRes(mat, weight = W, Ncomp = 2)
 #' dim(svd_res)
 #'
+#' @importFrom rsvddpd rSVDdpd
 #' @export
 WeightedSvdRes <- function(data, weight = NULL, Ncomp = 2, robust = FALSE) {
   Ngen <- nrow(data)

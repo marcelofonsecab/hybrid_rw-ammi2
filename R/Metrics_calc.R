@@ -11,11 +11,11 @@
 #'
 #' @examples
 #' # Assuming 'models' is the output from All_SVDS(...)
-#' metrics <- GEI.Metrics(models, Ncomp = 2)
+#' metrics <- GEI_Metrics(models, Ncomp = 2)
 #' metrics$AMMI
 #'
 #' @export
-GEI.Metrics <- function(allSVDs, Ncomp = 2) {
+GEI_Metrics <- function(allSVDs, Ncomp = 2) {
   Metrics <- list()
   realresidual <- allSVDs$RealSVD$residual
   realdf <- allSVDs$RealSVD$matrix.fitted + realresidual

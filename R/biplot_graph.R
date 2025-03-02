@@ -14,8 +14,8 @@
 #' @return Produces a biplot on the current graphic device.
 #'
 #' @examples
-#' sim_data <- sim.amb(seed = 123)
-#' ammi_res <- ammi.model(sim_data, Ncomp = 2)
+#' sim_data <- sim_amb(seed = 123)
+#' ammi_res <- ammi_model(sim_data, Ncomp = 2)
 #' BiplotCreation(ammi_res$SVD, env.names = levels(sim_data$env), gen.names = levels(sim_data$gen))
 #'
 #' @export

@@ -23,7 +23,7 @@ or into a matrix by applying a specified function (e.g., \code{mean} or \code{me
 on the yield values grouped by genotype and environment.
 }
 \examples{
-sim_data <- sim.amb(seed = 123)
+sim_data <- sim_amb(seed = 123)
 trans_df <- transform_usable_data(sim_data, mean, type = "dataframe")
 str(trans_df)
 

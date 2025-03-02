@@ -12,10 +12,12 @@
 #' @return Either a summarized data frame or a matrix of transformed yield values.
 #'
 #' @examples
-#' sim_data <- sim.amb(seed = 123)
+#' sim_data <- sim_amb(seed = 123)
 #' trans_df <- transform_usable_data(sim_data, mean, type = "dataframe")
 #' str(trans_df)
 #'
+#' @importFrom dplyr group_by summarise arrange
+#' @importFrom magrittr %>%
 #' @export
 transform_usable_data <- function(dataframe, func, type = c("dataframe", "matrix")) {
   type_aux <- c("dataframe", "matrix")

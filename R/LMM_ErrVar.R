@@ -9,12 +9,13 @@
 #'
 #' @examples
 #' sim_data <- sim.amb(seed = 123)
-#' rep_data <- Create.Replications(sim_data, reps = 2, sig = 1)
-#' err_var <- LMM.Error_variance(rep_data)
+#' rep_data <- Create_Replications(sim_data, reps = 2, sig = 1)
+#' err_var <- LMM_Error_variance(rep_data)
 #' err_var
 #'
+#' @importFrom lme4 lmer VarCorr
 #' @export
-LMM.Error_variance <- function(data) {
+LMM_Error_variance <- function(data) {
   quant.gen <- length(unique(data$gen))
   quant.env <- length(unique(data$env))
 

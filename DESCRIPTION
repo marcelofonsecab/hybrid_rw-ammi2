@@ -15,5 +15,9 @@ Imports:
     robustlmm,
     MASS,
     reshape2,
-    rsvddpd
+    rsvddpd,
+    magrittr,
+    tibble
 RoxygenNote: 7.2.3
+Depends: 
+    R (>= 3.5)

@@ -21,33 +21,38 @@
 #' err_vars <- Error_Var(rep_data)
 #' err_vars
 #'
+#' @importFrom pbapply pblapply
+#' @importFrom tibble tibble
+#' @importFrom dplyr group_by group_split
+#' @importFrom magrittr %>%
+#'
 #' @export
 Error_Var <- function(data, cluster = NULL) {
   tmp1 <- data %>%
     dplyr::group_by(gen) %>%
     dplyr::group_split() %>%
-    pbapply::pblapply(LMM.Error_variance, cl = cluster) %>%
+    pbapply::pblapply(LMM_Error_variance, cl = cluster) %>%
     unlist() %>%
     tibble::tibble(Group = unique(data$gen), Error_Variance = .)
 
   tmp2 <- data %>%
     dplyr::group_by(env) %>%
     dplyr::group_split() %>%
-    pbapply::pblapply(LMM.Error_variance, cl = cluster) %>%
+    pbapply::pblapply(LMM_Error_variance, cl = cluster) %>%
     unlist() %>%
     tibble::tibble(Group = unique(data$env), Error_Variance = .)
 
   tmp3 <- data %>%
     dplyr::group_by(gen) %>%
     dplyr::group_split() %>%
-    pbapply::pblapply(RLMM.Error_variance, cl = cluster) %>%
+    pbapply::pblapply(RLMM_Error_variance, cl = cluster) %>%
     unlist() %>%
     tibble::tibble(Group = unique(data$gen), Error_Variance = .)
 
   tmp4 <- data %>%
     dplyr::group_by(env) %>%
     dplyr::group_split() %>%
-    pbapply::pblapply(RLMM.Error_variance, cl = cluster) %>%
+    pbapply::pblapply(RLMM_Error_variance, cl = cluster) %>%
     unlist() %>%
     tibble::tibble(Group = unique(data$env), Error_Variance = .)
 

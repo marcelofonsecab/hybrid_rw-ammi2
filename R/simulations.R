@@ -26,11 +26,11 @@
 #'
 #' @examples
 #' # Simulate data with default parameters
-#' sim_data <- sim.amb(seed = 123)
+#' sim_data <- sim_amb(seed = 123)
 #' head(sim_data)
 #'
 #' @export
-sim.amb <- function(seed = NULL, Ngen = 100, Nenv = 8, Ncomp = 2,
+sim_amb <- function(seed = NULL, Ngen = 100, Nenv = 8, Ncomp = 2,
                     effectGlobal = c(mean = 15, sd = sqrt(3)),
                     effectGen = c(mean = 5, sd = 1),
                     effectEnv = c(mean = 8, sd = sqrt(2)),
@@ -64,7 +64,7 @@ sim.amb <- function(seed = NULL, Ngen = 100, Nenv = 8, Ncomp = 2,
   aux <- data.frame(
     gen   = as.factor(rep(paste0("G", sprintf('%03d', 1:Ngen)), each = Nenv)),
     env   = as.factor(rep(paste0("E", 1:Nenv), times = Ngen)),
-    rep   = factor(1),
+    rep   = 1,
     yield = as.vector(simulated.amb)
   )
 

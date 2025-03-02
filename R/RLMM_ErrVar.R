@@ -8,13 +8,15 @@
 #' @return A numeric value representing the error variance.
 #'
 #' @examples
-#' sim_data <- sim.amb(seed = 123)
-#' rep_data <- Create.Replications(sim_data, reps = 2, sig = 1)
-#' err_var <- RLMM.Error_variance(rep_data)
+#' sim_data <- sim_amb(seed = 123)
+#' rep_data <- Create_Replications(sim_data, reps = 2, sig = 1)
+#' err_var <- RLMM_Error_variance(rep_data)
 #' err_var
 #'
+#' @importFrom robustlmm rlmer
+#' @importFrom lme4 VarCorr
 #' @export
-RLMM.Error_variance <- function(data) {
+RLMM_Error_variance <- function(data) {
   quant.gen <- length(unique(data$gen))
   quant.env <- length(unique(data$env))
 

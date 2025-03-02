@@ -17,12 +17,12 @@
 #'   }
 #'
 #' @examples
-#' sim_data <- sim.amb(seed = 123)
-#' ammi_res <- ammi.model(sim_data, Ncomp = 2)
+#' sim_data <- sim_amb(seed = 123)
+#' ammi_res <- ammi_model(sim_data, Ncomp = 2)
 #' names(ammi_res)
 #'
 #' @export
-ammi.model <- function(dataframe, Ncomp = 2) {
+ammi_model <- function(dataframe, Ncomp = 2) {
   df.mean <- transform_usable_data(dataframe, mean, type = "dataframe")
   Ngen <- nlevels(df.mean$gen)
   Nenv <- nlevels(df.mean$env)

@@ -19,8 +19,8 @@
 #'   }
 #'
 #' @examples
-#' sim_data <- sim.amb(seed = 123)
-#' rep_data <- Create.Replications(sim_data, reps = 2, sig = 1)
+#' sim_data <- sim_amb(seed = 123)
+#' rep_data <- Create_Replications(sim_data, reps = 2, sig = 1)
 #' contaminated <- Data_Contamination(rep_data, percentage = 5, seed = 1, type = "shift")
 #' # Assume weights is a predefined list of weight vectors
 #' models <- All_SVDS(data_not_contaminated = rep_data,
@@ -33,24 +33,24 @@
 #' @export
 All_SVDS <- function(data_not_contaminated, data_contaminated, weights, Ncomp = 2, rSVD = FALSE) {
   WAMMI <- RAMMI <- RWAMMI <- list()
-  Estimated.real <- ammi.model(data_not_contaminated, Ncomp = Ncomp)
-  AMMI.model <- ammi.model(data_contaminated, Ncomp = Ncomp)
+  Estimated.real <- ammi_model(data_not_contaminated, Ncomp = Ncomp)
+  AMMI.model <- ammi_model(data_contaminated, Ncomp = Ncomp)
 
   for (i in 1:length(weights$LMM)) {
-    message(i)
+    message(paste0(i, "/", length(weights$LMM)))
     WAMMI[[paste0("WAMMI_", names(weights$LMM)[i])]] <-
-      wammi.model(data_contaminated, weight = weights$LMM[[i]], Ncomp = Ncomp)
+      wammi_model(data_contaminated, weight = weights$LMM[[i]], Ncomp = Ncomp)
 
     if (i == 5) {
       RAMMI[[paste0("RAMMI_", names(weights$RLMM)[i])]] <-
-        rammi.model(data_contaminated, weight = NULL, Ncomp = Ncomp)
+        rammi_model(data_contaminated, weight = NULL, Ncomp = Ncomp)
     } else {
       RAMMI[[paste0("RAMMI_", names(weights$RLMM)[i])]] <-
-        rammi.model(data_contaminated, weight = weights$RLMM[[i]], Ncomp = Ncomp)
+        rammi_model(data_contaminated, weight = weights$RLMM[[i]], Ncomp = Ncomp)
     }
 
     RWAMMI[[paste0("RWAMMI_", names(weights$RLMM)[i])]] <-
-      rwammi.model(data_contaminated, weight = weights$RLMM[[i]], Ncomp = Ncomp, rSVD = rSVD)
+      rwammi_model(data_contaminated, weight = weights$RLMM[[i]], Ncomp = Ncomp, rSVD = rSVD)
   }
 
   ALLModels <- list(RealSVD = Estimated.real,

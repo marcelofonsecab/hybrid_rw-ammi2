@@ -38,8 +38,8 @@ This function fits several models (AMMI, W-AMMI, R-AMMI, and RW-AMMI) to the pro
 and aggregates their singular value decomposition (SVD) results.
 }
 \examples{
-sim_data <- sim.amb(seed = 123)
-rep_data <- Create.Replications(sim_data, reps = 2, sig = 1)
+sim_data <- sim_amb(seed = 123)
+rep_data <- Create_Replications(sim_data, reps = 2, sig = 1)
 contaminated <- Data_Contamination(rep_data, percentage = 5, seed = 1, type = "shift")
 # Assume weights is a predefined list of weight vectors
 models <- All_SVDS(data_not_contaminated = rep_data,

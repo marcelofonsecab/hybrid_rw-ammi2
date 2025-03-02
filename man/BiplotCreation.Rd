@@ -37,8 +37,8 @@ This function creates a biplot using scores and loadings extracted from an SVD o
 The scores and loadings are scaled by the square roots of the singular values.
 }
 \examples{
-sim_data <- sim.amb(seed = 123)
-ammi_res <- ammi.model(sim_data, Ncomp = 2)
+sim_data <- sim_amb(seed = 123)
+ammi_res <- ammi_model(sim_data, Ncomp = 2)
 BiplotCreation(ammi_res$SVD, env.names = levels(sim_data$env), gen.names = levels(sim_data$gen))
 
 }

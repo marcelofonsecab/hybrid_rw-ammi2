@@ -12,8 +12,8 @@
 #' @return A matrix (or character matrix if \code{colors} is TRUE) indicating the best genotype for each environment.
 #'
 #' @examples
-#' sim_data <- sim.amb(seed = 123)
-#' ammi_res <- ammi.model(sim_data, Ncomp = 2)
+#' sim_data <- sim_amb(seed = 123)
+#' ammi_res <- ammi_model(sim_data, Ncomp = 2)
 #' best_geno <- best_envgen(ammi_res, quant = 1)
 #' best_geno
 #'

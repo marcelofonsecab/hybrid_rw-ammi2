@@ -17,12 +17,14 @@
 #'   }
 #'
 #' @examples
-#' sim_data <- sim.amb(seed = 123)
-#' rwammi_res <- rwammi.model(sim_data, weight = rep(1, nrow(sim_data)), Ncomp = 2, rSVD = FALSE)
+#' sim_data <- sim_amb(seed = 123)
+#' rwammi_res <- rwammi_model(sim_data, weight = rep(1, nrow(sim_data)), Ncomp = 2, rSVD = FALSE)
 #' names(rwammi_res)
 #'
+#' @importFrom MASS rlm
+#'
 #' @export
-rwammi.model <- function(dataframe, weight = NULL, Ncomp = 2, rSVD = FALSE) {
+rwammi_model <- function(dataframe, weight = NULL, Ncomp = 2, rSVD = FALSE) {
   data <- transform_usable_data(dataframe, median, "dataframe")
   Ngen <- nlevels(data$gen)
   Nenv <- nlevels(data$env)

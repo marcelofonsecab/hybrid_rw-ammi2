@@ -17,14 +17,14 @@
 #'
 #' @examples
 #' # Generate simulated data using sim.amb (assumes sim.amb is already defined and documented)
-#' sim_data <- sim.amb(seed = 123)
+#' sim_data <- sim_amb(seed = 123)
 #'
 #' # Create 3 replications with a residual standard deviation of 1.5
-#' rep_data <- Create.Replications(sim_data, reps = 3, sig = 1.5)
+#' rep_data <- Create_Replications(sim_data, reps = 3, sig = 1.5)
 #' head(rep_data)
 #'
 #' @export
-Create.Replications <- function(data, reps = 2, sig = 1) {
+Create_Replications <- function(data, reps = 2, sig = 1) {
 
   # Determine the number of environments and genotypes from the data factors
   Nenv <- length(levels(data$env))
@@ -42,7 +42,7 @@ Create.Replications <- function(data, reps = 2, sig = 1) {
     # Create a copy of the original data and add residuals to the yield
     data.aux <- data
     data.aux$yield <- data.aux$yield + resids
-    data.aux$rep <- as.factor(i)  # Mark the replication number as a factor
+    data.aux$rep <- i  # Mark the replication number as a factor
 
     # Append the replicated data to the overall dataset
     data.tmp <- rbind(data.tmp, data.aux)

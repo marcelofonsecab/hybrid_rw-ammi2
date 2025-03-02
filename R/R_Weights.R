@@ -10,14 +10,14 @@
 #' @return A list containing sub-lists for LMM and RLMM weights with several weighting schemes.
 #'
 #' @examples
-#' sim_data <- sim.amb(seed = 123)
-#' rep_data <- Create.Replications(sim_data, reps = 2, sig = 1)
+#' sim_data <- sim_amb(seed = 123)
+#' rep_data <- Create_Replications(sim_data, reps = 2, sig = 1)
 #' err_vars <- Error_Var(rep_data)
-#' weights <- R.Weights(rep_data, errorvariances = err_vars)
+#' weights <- R_Weights(rep_data, errorvariances = err_vars)
 #' names(weights)
 #'
 #' @export
-R.Weights <- function(data, errorvariances) {
+R_Weights <- function(data, errorvariances) {
   Ngen <- nlevels(data$gen)
   Nenv <- nlevels(data$env)
   Nrep <- max(data$rep)

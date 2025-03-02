@@ -23,8 +23,9 @@
 #' wammi_res <- wammi.model(sim_data, weight = weight_vec, Ncomp = 2)
 #' names(wammi_res)
 #'
+#' @importFrom reshape2 melt
 #' @export
-wammi.model <- function(data, weight = NULL, Ncomp = 2) {
+wammi_model <- function(data, weight = NULL, Ncomp = 2) {
   dataframe <- transform_usable_data(data, mean, type = "dataframe")
   Nenv <- nlevels(dataframe$env)
 

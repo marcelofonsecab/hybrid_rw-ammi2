@@ -1,10 +1,10 @@
-# hybrid_rw-ammi
+# hybrid_rw_ammi
 
-**hybrid_rw-ammi** is an R package developed for genotype-by-environment interaction (GEI) analysis in crop improvement breeding programs. It implements the classic AMMI model along with robust and weighted variations, and introduces a hybrid framework called **RW-AMMI** that integrates robust and weighted algorithms. This approach enhances the model’s ability to handle atypical data points—arising from measurement errors, genotype characteristics, diseases, or climatic extremes—thus maintaining reliable inferential results in the presence of data contamination or heterogeneous error variances.
+**hybrid_rw_ammi** is an R package developed for genotype-by-environment interaction (GEI) analysis in crop improvement breeding programs. It implements the classic AMMI model along with robust and weighted variations, and introduces a hybrid framework called **RW-AMMI** that integrates robust and weighted algorithms. This approach enhances the model’s ability to handle atypical data points—arising from measurement errors, genotype characteristics, diseases, or climatic extremes—thus maintaining reliable inferential results in the presence of data contamination or heterogeneous error variances.
 
 ## Overview
 
-The AMMI model and its variations have long been used to identify genotypes with specific adaptability and stability under diverse environmental conditions. However, contamination from measurement errors, diseases, or extreme climatic events may violate the assumptions of the model, leading to unreliable conclusions. **hybrid_rw-ammi** addresses these challenges by:
+The AMMI model and its variations have long been used to identify genotypes with specific adaptability and stability under diverse environmental conditions. However, contamination from measurement errors, diseases, or extreme climatic events may violate the assumptions of the model, leading to unreliable conclusions. **hybrid_rw_ammi** addresses these challenges by:
 
 - **Robustifying the AMMI Model:** Incorporating robust algorithms (R-AMMI) to lessen the impact of outliers.
 - **Weighted Approaches:** Introducing nine weighting schemes for weighted (W-AMMI), robust (R-AMMI), and hybrid (RW-AMMI) models.
@@ -33,11 +33,11 @@ The AMMI model and its variations have long been used to identify genotypes with
 
 ## Installation
 
-You can install **hybrid_rw-ammi** from GitHub
+You can install **hybrid_rw_ammi** from GitHub
 
 ```r
 # install.packages("devtools")
-devtools::install_github("marcelofonsecab/hybrid_rw-ammi2")
+devtools::install_github("marcelofonsecab/hybrid_rw_ammi")
 ```
 
 Ensure you have the following required packages installed:

@@ -1,4 +1,4 @@
-# Example of Simulating Synthetic Data Using the hybrid_rw_ammi Package
+# Example of Simulating Synthetic Data Using the hybridRWAMMI Package
 # This script demonstrates how to:
 #   - Generate synthetic genotype-environment data using the sim_amb function.
 #   - Create replications of the simulated data.
@@ -16,7 +16,7 @@
 # install.packages("rsvddpd")
 # =============================================================================
 #
-library(hybrid_rw_ammi)
+library(hybridRWAMMI)
 
 # Set contamination parameters:
 shift_values <- c(4, 7, 10)          # Shift values (k) for 'shift' contamination

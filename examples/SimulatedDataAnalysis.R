@@ -92,6 +92,7 @@ names(Values$Metric) <- names(Values$pvalues) <- model_names
 # Note: To create the tables shown in the paper, repeat this procedure for each metric
 # and for every contamination scenario (including the non-contaminated case),
 # then bind all values into one matrix for presentation.
+# Just change the "MPEV" to: "MSE.Singvals1"; "MSE.Singvals2"; "MtSPE"; or "Maxsub"
 
 # ----------------------------------------------------------------
 # Step 4: Generate Biplots

@@ -1,6 +1,5 @@
 # Example Application of the hybridRWAMMI Package
 # This script demonstrates a step-by-step analysis using real genotype-environment data.
-# All comments and variable names are in English to ensure global usability.
 
 # Load the hybridRWAMMI package
 library(hybridRWAMMI)

@@ -71,6 +71,8 @@ The analysis of the real Steptoe x Morex data presented in Section 5 of the manu
 - Selecting the best genotype per environment.
 - Generating biplots for visualization.
 
+For any other dataset in the same format, the user can simply replace the Steptoe x Morex dataset with their new dataset to apply the same analysis.
+
 ### Simulating Data and Contamination
 
 The package includes functions to generate synthetic GEI data and simulate various contamination scenarios. See the examples:

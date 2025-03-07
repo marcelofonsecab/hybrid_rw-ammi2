@@ -75,7 +75,7 @@ For any other dataset in the same format, the user can simply replace the Stepto
 
 ### Simulating Data and Contamination
 
-The package includes functions to generate synthetic GEI data and simulate various contamination scenarios. See the examples:
+The package includes functions to generate synthetic GEI data and simulate various contamination scenarios presented in Section 3 of the paper. See the examples:
 
 - [`ExampleSimulatingDatasets.R`](examples/ExampleSimulatingDatasets.R)  
   *Demonstrates how to generate synthetic data, create replications, and apply different contamination types (shift, variance inflation, point mass).*

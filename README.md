@@ -63,7 +63,7 @@ Your genotype-environment dataset must be a data frame with exactly four columns
 3. **rep**  - Factor indicating the replication number (distinguishing repeated measurements).
 4. **yield** - Numeric vector of observed trait values.
 
-The analysis of the real Steptoe x Morex data presented in Section 5 of the manuscript is available in the R script [`SteptoexMorexDataAnalysis.R`](examples/SteptoexMorexDataAnalysis.R). This script is designed to be self-explanatory and provides step-by-step instructions on how to:
+The analysis of the real Steptoe x Morex data presented in **Section 5** of the manuscript is available in the R script [`SteptoexMorexDataAnalysis.R`](examples/SteptoexMorexDataAnalysis.R). This script is designed to be self-explanatory and provides step-by-step instructions on how to:
 - How to load your dataset (e.g., the *SteptoexMorex* dataset).
 - How to compute error variances and weights.
 - Fitting various AMMI-based models using SVD.
@@ -75,7 +75,7 @@ For any other dataset in the same format, the user can simply replace the Stepto
 
 ### Simulating Data and Contamination
 
-The package includes functions to generate synthetic GEI data and simulate various contamination scenarios presented in Section 3 of the paper. See the examples:
+The package includes functions to generate synthetic GEI data and simulate various contamination scenarios presented in **Section 3** of the presented paper. See the examples:
 
 - [`ExampleSimulatingDatasets.R`](examples/ExampleSimulatingDatasets.R)  
   *Demonstrates how to generate synthetic data, create replications, and apply different contamination types (shift, variance inflation, point mass).*

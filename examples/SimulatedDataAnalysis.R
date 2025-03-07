@@ -1,3 +1,6 @@
+# Please read the README file before starting this code
+# In particular you have indications on how to install the hybridRWAMMI package
+
 # ============================================================
 # Example Analysis of Simulated Data Using the hybridRWAMMI Package
 #

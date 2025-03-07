@@ -1,6 +1,7 @@
 # hybridRWAMMI
 
 **hybridRWAMMI** is an R package developed for genotype-by-environment interaction (GEI) analysis in crop improvement breeding programs. It implements the classic AMMI model along with robust and weighted variations, and introduces a hybrid framework called **RW-AMMI** that integrates robust and weighted algorithms. This approach enhances the model’s ability to handle atypical data points—arising from measurement errors, genotype characteristics, diseases, or climatic extremes—thus maintaining reliable inferential results in the presence of data contamination or heterogeneous error variances.
+This R package provides the implementation of the methods described in the paper *A Robust-Weighted AMMI Modeling Approach with Generalized Weighting Schemes*. It includes the code used for the analysis and modeling techniques presented in the paper, ensuring reproducibility and facilitating application to similar datasets. In addition, the package can also be used for the analysis of other two-way datasets, as illustrated in the examples described in the paper.
 
 ## Overview
 

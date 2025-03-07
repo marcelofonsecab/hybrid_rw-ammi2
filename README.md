@@ -61,7 +61,7 @@ Your genotype-environment dataset must be a data frame with exactly four columns
 3. **rep**  - Factor indicating the replication number (distinguishing repeated measurements).
 4. **yield** - Numeric vector of observed trait values.
 
-A complete example is provided in the [`SteptoexMorexDataAnalysis.R`](examples/SteptoexMorexDataAnalysis.R) script. This script demonstrates:
+The analysis of the real Steptoe x Morex data presented in Section 5 of the manuscript is available in the R script [`SteptoexMorexDataAnalysis.R`](examples/SteptoexMorexDataAnalysis.R). This script is designed to be self-explanatory and provides step-by-step instructions on how to:
 - How to load your dataset (e.g., the *SteptoexMorex* dataset).
 - How to compute error variances and weights.
 - Fitting various AMMI-based models using SVD.

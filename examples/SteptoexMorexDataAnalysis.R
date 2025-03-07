@@ -1,3 +1,6 @@
+# Please read the README file before starting this code
+# In particular you have indications on how to install the hybridRWAMMI package
+
 # Example Application of the hybridRWAMMI Package
 # This script demonstrates a step-by-step analysis using real genotype-environment data.
 
@@ -112,6 +115,7 @@ BiplotCreation(allSVDs$AMMI$SVD,
                lims.V = c(-2.94, 3.2))
 
 ## 6b: Biplots for selected W-AMMI models ({1}, {5}, {6})
+par(mfrow = c(1,3))
 BiplotCreation(allSVDs$WAMMI$WAMMI_lmm.Weights.Env$SVD,
                env.names = envNames,
                lims = TRUE,
@@ -165,6 +169,7 @@ BiplotCreation(allSVDs$RWAMMI$RWAMMI_rlmm.Weights.RlmdotEnv$SVD,
 # Step 7: (Supplementary) Create additional biplots for further model comparisons
 
 ## Biplots for additional W-AMMI models ({2}, {3}, {4}, {7}, {8}, {9})
+par(mfrow = c(2,3))
 BiplotCreation(allSVDs$WAMMI$WAMMI_lmm.Weights.Gen$SVD,
                env.names = envNames,
                lims = TRUE,
@@ -197,6 +202,7 @@ BiplotCreation(allSVDs$WAMMI$WAMMI_lmm.Weights.GenplusEnv$SVD,
                lims.V = c(-2.94, 3.2))
 
 ## Biplots for additional R-AMMI models ({2}, {3}, {4}, {7}, {8}, {9})
+par(mfrow = c(2,3))
 BiplotCreation(allSVDs$RAMMI$RAMMI_rlmm.Weights.Gen$SVD,
                env.names = envNames,
                lims = TRUE,
@@ -229,6 +235,7 @@ BiplotCreation(allSVDs$RAMMI$RAMMI_rlmm.Weights.GenplusEnv$SVD,
                lims.V = c(-2.94, 3.2))
 
 ## Biplots for additional RW-AMMI models ({2}, {3}, {4}, {7}, {8}, {9})
+par(mfrow = c(2,3))
 BiplotCreation(allSVDs$RWAMMI$RWAMMI_rlmm.Weights.Gen$SVD,
                env.names = envNames,
                lims = TRUE,

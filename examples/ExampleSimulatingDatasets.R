@@ -1,3 +1,6 @@
+# Please read the README file before starting this code
+# In particular you have indications on how to install the hybridRWAMMI package
+
 # Example of Simulating Synthetic Data Using the hybridRWAMMI Package
 # This script demonstrates how to:
 #   - Generate synthetic genotype-environment data using the sim_amb function.
